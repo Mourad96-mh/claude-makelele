@@ -1,0 +1,72 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition:
+    background var(--tr-fast),
+    color var(--tr-fast),
+    transform var(--tr-fast),
+    box-shadow var(--tr-fast);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.primary {
+  background: var(--color-gold);
+  color: var(--color-always-dark);
+}
+.primary:hover {
+  background: var(--color-gold-light);
+  box-shadow: var(--shadow-gold);
+}
+
+.outline {
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+}
+.outline:hover {
+  background: var(--color-gold);
+  color: var(--color-always-dark);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(28, 25, 23, 0.2);
+}
+.ghost:hover {
+  border-color: var(--color-white);
+  background: rgba(28, 25, 23, 0.05);
+}
+
+.primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 60%
+  );
+  background-size: 200% auto;
+  opacity: 0;
+}
+.primary:hover::after {
+  opacity: 1;
+  animation: shimmer 0.6s linear;
+}

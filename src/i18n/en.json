@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "accueil": "Home",
+    "actualites": "News",
+    "biographie": "Biography",
+    "media": "Media",
+    "boutique": "Shop",
+    "reseaux": "Social",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Official website",
+    "tagline": "The defensive midfielder who redefined modern football.",
+    "scroll": "Scroll"
+  },
+  "stats": {
+    "matches": "Club appearances",
+    "selections": "France caps",
+    "champions_league": "Champions Leagues",
+    "world_xi": "FIFA World XI"
+  },
+  "cta": {
+    "boutique": "Visit the shop",
+    "contact": "Get in touch"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "accueil": "Accueil",
+    "actualites": "Actualités",
+    "biographie": "Biographie",
+    "media": "Médias",
+    "boutique": "Boutique",
+    "reseaux": "Réseaux",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Site officiel",
+    "tagline": "Le milieu récupérateur qui a redéfini le football moderne.",
+    "scroll": "Défiler"
+  },
+  "stats": {
+    "matches": "Matchs en club",
+    "selections": "Sélections France",
+    "champions_league": "Ligues des Champions",
+    "world_xi": "FIFA World XI"
+  },
+  "cta": {
+    "boutique": "Découvrir la boutique",
+    "contact": "Prendre contact"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité"
+  }
+}

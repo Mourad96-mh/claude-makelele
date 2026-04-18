@@ -1,0 +1,33 @@
+.wrapper {
+  margin-bottom: var(--space-xl);
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.6875rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-sm);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.sub {
+  margin-top: var(--space-md);
+  max-width: 56ch;
+  color: var(--color-grey-light);
+}
+
+.center {
+  text-align: center;
+}
+.center .sub {
+  margin-left: auto;
+  margin-right: auto;
+}

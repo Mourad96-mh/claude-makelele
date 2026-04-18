@@ -1,0 +1,151 @@
+.navbar {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem var(--container-pad);
+  background: var(--color-black);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 70px;
+  width: auto;
+  transition: opacity var(--tr-fast);
+}
+
+.logo:hover .logoImg {
+  opacity: 0.85;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.link {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(28, 25, 23, 0.5);
+  position: relative;
+  transition: color var(--tr-fast);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--tr-base);
+}
+
+.link:hover,
+.link.active {
+  color: var(--color-white);
+}
+
+.link:hover::after,
+.link.active::after {
+  transform: scaleX(1);
+}
+
+.navSocials {
+  gap: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .navSocials {
+    display: none;
+  }
+}
+
+.cartBtn {
+  position: relative;
+  color: var(--color-white);
+  opacity: 0.8;
+  transition: opacity var(--tr-fast);
+}
+.cartBtn:hover {
+  opacity: 1;
+}
+
+.cartCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--color-gold);
+  color: var(--color-always-dark);
+  font-size: 0.625rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burger span {
+  display: block;
+  height: 1.5px;
+  background: var(--color-white);
+  transition:
+    transform var(--tr-base),
+    opacity var(--tr-base);
+}
+
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+  .links {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--color-black);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 99;
+  }
+  .links.open {
+    display: flex;
+  }
+  .link {
+    font-size: 1.25rem;
+  }
+}

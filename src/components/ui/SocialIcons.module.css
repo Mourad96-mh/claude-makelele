@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(28, 25, 23, 0.6);
+  transition: color var(--tr-fast), transform var(--tr-fast);
+}
+
+.icon:hover {
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}

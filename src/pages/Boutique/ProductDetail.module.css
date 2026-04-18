@@ -1,0 +1,141 @@
+.wrap {
+  padding: calc(var(--space-2xl) + 80px) 0 var(--space-2xl);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-grey-light);
+  transition: color var(--tr-fast);
+  margin-bottom: var(--space-xl);
+}
+
+.back:hover {
+  color: var(--color-gold);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.imagePlaceholder {
+  aspect-ratio: 3 / 4;
+  background: var(--color-grey);
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.imagePricePlaceholder {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--color-gold);
+  opacity: 0.5;
+}
+
+.imageCat {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-grey-light);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-white);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--color-gold);
+  margin-bottom: var(--space-lg);
+}
+
+.desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-grey-light);
+  margin-bottom: var(--space-xl);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+.meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.meta p {
+  display: flex;
+  gap: var(--space-md);
+  font-size: 0.875rem;
+  color: var(--color-grey-light);
+}
+
+.meta span {
+  font-weight: 600;
+  color: var(--color-white);
+  min-width: 100px;
+}
+
+.linkBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  transition: background var(--tr-fast), color var(--tr-fast);
+}
+
+.linkBtn:hover {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+.notFound {
+  padding: calc(var(--space-2xl) + 80px) 0 var(--space-2xl);
+  text-align: center;
+}
+
+.notFound a {
+  color: var(--color-gold);
+  display: block;
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,215 @@
+/* ============================================
+   5-COLUMN GRID — 1 ROW
+   Col 1: portrait image
+   Col 2: portrait image (same dims)
+   Col 3: text cell
+   Col 4: 5 stacked images
+   Col 5: 5 stacked images
+   ============================================ */
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 2fr 0.6fr 0.6fr;
+  grid-template-rows: minmax(0, 1fr) auto;
+  width: 100%;
+  padding: 3rem var(--container-pad);
+  gap: 6px;
+  background: var(--color-black);
+}
+
+/* ============================================
+   CELL — PORTRAIT 1 (col 1)
+   ============================================ */
+.cellPortrait {
+  overflow: hidden;
+  height: 100%;
+}
+
+.cellPortrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* ============================================
+   CELL — PORTRAIT 2 (col 2) — same as col 1
+   ============================================ */
+.cellPortrait2 {
+  overflow: hidden;
+  height: 100%;
+}
+
+.cellPortrait2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* ============================================
+   CELL — TEXT (col 3) — mirrors col 2 from previous pages
+   ============================================ */
+.cellText {
+  background: var(--color-grey);
+  padding: var(--space-xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 3vw, 4.5rem);
+  line-height: 0.92;
+  color: var(--color-white);
+}
+
+.intro {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--color-grey-light);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+/* ============================================
+   CLUBS LIST
+   ============================================ */
+.clubsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.clubsItem {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.6vw, 1.75rem);
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  transition: color var(--tr-fast);
+}
+
+.clubsItem:hover {
+  color: var(--color-gold);
+}
+
+.clubDot {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  transition: transform var(--tr-fast), box-shadow var(--tr-fast);
+}
+
+.clubsItem:hover .clubDot {
+  transform: scale(1.5);
+  box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.2);
+}
+
+/* ============================================
+   CELL — STACKED IMAGES (col 4) — 5 items
+   ============================================ */
+.cellAction {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 6px;
+  height: 100%;
+}
+
+.actionItem {
+  background: var(--color-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+}
+
+.actionItem img {
+  width: 100%;
+  height: 100%;
+  max-height: 133px;
+}
+
+/* ============================================
+   CELL — STACKED IMAGES (col 5) — 5 items
+   ============================================ */
+.cellLogos {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 6px;
+  height: 100%;
+}
+
+.logoItem {
+  background: var(--color-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+}
+
+.logoItem img {
+  width: 100%;
+  height: 100%;
+  max-height: 133px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1.6fr 0.6fr 0.6fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem var(--container-pad) 3rem;
+  }
+
+  .cellPortrait  { aspect-ratio: 1; height: auto; }
+  .cellPortrait2 { aspect-ratio: 1; height: auto; }
+
+  .cellText {
+    grid-column: 1 / -1;
+    margin-left: 0;
+    padding: var(--space-lg);
+  }
+
+  .cellAction {
+    grid-column: 1 / -1;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    aspect-ratio: 16 / 5;
+    height: auto;
+  }
+
+  .cellLogos {
+    grid-column: 1 / -1;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    height: auto;
+  }
+
+  .actionItem img,
+  .logoItem img {
+    max-height: 80px;
+  }
+}
