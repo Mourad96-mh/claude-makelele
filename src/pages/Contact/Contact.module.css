@@ -78,7 +78,7 @@
 
 .title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  font-size: 2.25rem;
   color: var(--color-white);
   line-height: 0.92;
   margin-bottom: var(--space-lg);
@@ -161,6 +161,36 @@
 
 .contactLink:hover {
   color: var(--color-gold-light);
+}
+
+/* =====================
+   COMPANY CARD
+   ===================== */
+.companyCard {
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(201, 168, 76, 0.04);
+  border-left: 2px solid var(--color-gold);
+  margin-bottom: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.companyName {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  line-height: 1.3;
+}
+
+.companyDetail {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-grey-light);
+  line-height: 1.5;
 }
 
 /* =====================
@@ -301,7 +331,7 @@
 @media (max-width: 900px) {
   .card {
     grid-template-columns: 1fr;
-    grid-template-rows: 220px 1fr;
+    grid-template-rows: 420px 1fr;
     max-height: none;
   }
 
@@ -312,11 +342,17 @@
 
 @media (max-width: 600px) {
   .page {
-    padding: var(--space-md) var(--container-pad);
+    padding: calc(var(--space-xl) + 60px) var(--container-pad) var(--space-lg);
+    align-items: flex-start;
   }
 
   .card {
-    grid-template-rows: 180px 1fr;
+    min-height: unset;
+    grid-template-rows: 380px 1fr;
+  }
+
+  .imagePanel {
+    border-bottom: 3px solid var(--color-gold);
   }
 
   .formInner {
@@ -325,5 +361,20 @@
 
   .row {
     grid-template-columns: 1fr;
+  }
+
+  .contactCard {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .contactLinks {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    grid-template-rows: 320px 1fr;
   }
 }

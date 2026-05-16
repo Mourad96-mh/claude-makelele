@@ -10,14 +10,6 @@ import styles from "./Contact.module.css";
 const schema = z.object({
   name: z.string().min(2, "Nom requis (min. 2 caractères)"),
   email: z.string().email("Adresse email invalide"),
-  subject: z.enum(["contact", "booking", "presse", "partenariat"], {
-    errorMap: () => ({ message: "Veuillez choisir un sujet" }),
-  }),
-  eventType: z.string().optional(),
-  date: z.string().optional(),
-  location: z.string().optional(),
-  budget: z.string().optional(),
-  message: z.string().min(10, "Message trop court (min. 10 caractères)"),
 });
 
 export default function Contact() {
@@ -26,12 +18,9 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
-    watch,
     reset,
     formState: { errors },
   } = useForm({ resolver: zodResolver(schema) });
-
-  const subject = watch("subject");
 
   async function onSubmit(data) {
     setStatus("sending");
@@ -54,6 +43,14 @@ export default function Contact() {
       <Helmet>
         <title>Contact & Booking | Claude Makélélé — Site Officiel</title>
         <meta name="description" content="Contactez l'équipe de Claude Makélélé pour des demandes de booking, presse ou partenariats." />
+        <meta property="og:title" content="Contact & Booking | Claude Makélélé — Site Officiel" />
+        <meta property="og:description" content="Contactez l'équipe de Claude Makélélé pour des demandes de booking, presse ou partenariats." />
+        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
+        <meta property="og:url" content="https://claudemakelele.com/contact" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact & Booking | Claude Makélélé — Site Officiel" />
+        <meta name="twitter:description" content="Contactez l'équipe de Claude Makélélé pour des demandes de booking, presse ou partenariats." />
+        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
         <link rel="canonical" href="https://claudemakelele.com/contact" />
       </Helmet>
 
@@ -62,7 +59,7 @@ export default function Contact() {
         {/* Left — image panel */}
         <div className={styles.imagePanel}>
           <img
-            src="/contact/side-photo-contact.jpeg"
+            src="/imgs/contact/side-photo-contact.jpeg"
             alt="Claude Makélélé"
             className={styles.sidePhoto}
           />
@@ -72,7 +69,7 @@ export default function Contact() {
         <div className={styles.formPanel}>
           <div className={styles.formInner}>
             <p className={styles.eyebrow}>Vous souhaitez contacter Claude Makélélé</p>
-            <h1 className={styles.title}>Partenariats &amp;<br />Sponsoring</h1>
+            <h1 className={styles.title}>Partenariats &amp; Sponsoring</h1>
             <div className={styles.domains}>
               <span>Partenariats</span>
               <span>Sponsoring</span>
@@ -94,6 +91,12 @@ export default function Contact() {
                   +33 7 77 44 98 85
                 </a>
               </div>
+            </div>
+
+            <div className={styles.companyCard}>
+              <p className={styles.companyName}>NATIS MARKETING</p>
+              <p className={styles.companyDetail}>3, BD Des anglais — 44100 NANTES FRANCE</p>
+              <p className={styles.companyDetail}>SIRET : 41053798900031</p>
             </div>
 
             {status === "success" ? (
@@ -134,81 +137,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className={styles.field}>
-                  <label className={styles.label} htmlFor="subject">Sujet *</label>
-                  <select
-                    id="subject"
-                    className={`${styles.select} ${errors.subject ? styles.inputError : ""}`}
-                    {...register("subject")}
-                  >
-                    <option value="">Choisir un sujet</option>
-                    <option value="contact">Contact général</option>
-                    <option value="booking">Booking / Événement</option>
-                    <option value="presse">Demande presse</option>
-                    <option value="partenariat">Partenariat</option>
-                  </select>
-                  {errors.subject && <span className={styles.error}>{errors.subject.message}</span>}
-                </div>
-
-                {subject === "booking" && (
-                  <div className={styles.bookingFields}>
-                    <div className={styles.row}>
-                      <div className={styles.field}>
-                        <label className={styles.label} htmlFor="eventType">Type d'événement</label>
-                        <input
-                          id="eventType"
-                          className={styles.input}
-                          {...register("eventType")}
-                          placeholder="Conférence, gala, match caritatif…"
-                        />
-                      </div>
-                      <div className={styles.field}>
-                        <label className={styles.label} htmlFor="date">Date souhaitée</label>
-                        <input
-                          id="date"
-                          type="date"
-                          className={styles.input}
-                          {...register("date")}
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.row}>
-                      <div className={styles.field}>
-                        <label className={styles.label} htmlFor="location">Lieu</label>
-                        <input
-                          id="location"
-                          className={styles.input}
-                          {...register("location")}
-                          placeholder="Ville, pays"
-                        />
-                      </div>
-                      <div className={styles.field}>
-                        <label className={styles.label} htmlFor="budget">Budget estimé</label>
-                        <select id="budget" className={styles.select} {...register("budget")}>
-                          <option value="">Sélectionner</option>
-                          <option value="<5k">Moins de 5 000€</option>
-                          <option value="5-20k">5 000€ – 20 000€</option>
-                          <option value="20-50k">20 000€ – 50 000€</option>
-                          <option value=">50k">Plus de 50 000€</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                <div className={styles.field}>
-                  <label className={styles.label} htmlFor="message">Message *</label>
-                  <textarea
-                    id="message"
-                    className={`${styles.textarea} ${errors.message ? styles.inputError : ""}`}
-                    rows={5}
-                    {...register("message")}
-                    placeholder="Décrivez votre demande…"
-                  />
-                  {errors.message && <span className={styles.error}>{errors.message.message}</span>}
-                </div>
-
-                {status === "error" && (
+{status === "error" && (
                   <p className={styles.sendError}>
                     Une erreur est survenue. Veuillez réessayer ou nous écrire directement.
                   </p>

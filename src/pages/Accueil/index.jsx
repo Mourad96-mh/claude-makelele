@@ -15,8 +15,34 @@ export default function Accueil() {
         <title>Claude Makélélé | Site Officiel</title>
         <meta name="description" content="Site officiel de Claude Makélélé — légende du football mondial, icône du Real Madrid, Chelsea et de l'équipe de France." />
         <meta property="og:title" content="Claude Makélélé | Site Officiel" />
-        <meta property="og:image" content="/og-image.jpg" />
+        <meta property="og:description" content="Site officiel de Claude Makélélé — légende du football mondial, icône du Real Madrid, Chelsea et de l'équipe de France." />
+        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
+        <meta property="og:url" content="https://claudemakelele.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Claude Makélélé | Site Officiel" />
+        <meta name="twitter:description" content="Site officiel de Claude Makélélé — légende du football mondial, icône du Real Madrid, Chelsea et de l'équipe de France." />
+        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
         <link rel="canonical" href="https://claudemakelele.com/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Claude Makélélé",
+            "birthDate": "1973-02-18",
+            "birthPlace": {"@type": "Place", "name": "Kinshasa, République Démocratique du Congo"},
+            "nationality": "Français",
+            "jobTitle": "Footballeur professionnel (retraité)",
+            "url": "https://claudemakelele.com",
+            "image": "https://claudemakelele.com/claude-maakele.jpeg",
+            "description": "Claude Makélélé est un footballeur français, légende du Real Madrid, Chelsea, PSG et de l'équipe de France, créateur du « rôle Makélélé ».",
+            "sameAs": [
+              "https://www.instagram.com/makeleleofficial/",
+              "https://x.com/ClaudeMakelele",
+              "https://www.facebook.com/Makeleleofficial/",
+              "https://fr.wikipedia.org/wiki/Claude_Mak%C3%A9l%C3%A9l%C3%A9"
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className={styles.grid}>

@@ -7,10 +7,9 @@ import styles from "./Navbar.module.css";
 const navLinks = [
   { to: "/", label: "Accueil", end: true },
   { to: "/actualites", label: "Actualités" },
-  { to: "/biographie", label: "Biographie" },
-  { to: "/media", label: "Médias" },
+  { to: "/palmares", label: "Palmarès" },
   { to: "/boutique", label: "Boutique" },
-  { to: "/reseaux-sociaux", label: "Réseaux" },
+  { to: "/partenariats", label: "Partenariats" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -41,7 +40,7 @@ export default function Navbar() {
         ))}
       </div>
 
-      <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+      <div className={styles.navRight}>
         {/* Social icons — desktop only */}
         <SocialIcons className={styles.navSocials} />
 

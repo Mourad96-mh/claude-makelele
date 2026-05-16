@@ -1,63 +1,36 @@
-import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import PageWrapper from "../../components/layout/PageWrapper";
-import SectionTitle from "../../components/ui/SectionTitle";
-import ProductCard from "../../components/shared/ProductCard";
-import { products } from "../../data/products";
 import styles from "./Boutique.module.css";
 
-const categories = ["Tous", "Maillots", "Accessoires", "Livres & Biographies", "Éditions limitées"];
-
 export default function Boutique() {
-  const [activeCategory, setActiveCategory] = useState("Tous");
-
-  const filtered = activeCategory === "Tous"
-    ? products
-    : products.filter((p) => p.category === activeCategory);
-
   return (
     <>
       <Helmet>
-        <title>Boutique Officielle | Claude Makélélé</title>
-        <meta name="description" content="Boutique officielle Claude Makélélé — maillots, accessoires, livres et éditions limitées." />
+        <title>Boutique — En Construction | Claude Makélélé</title>
+        <meta name="description" content="La boutique officielle Claude Makélélé arrive bientôt." />
+        <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://claudemakelele.com/boutique" />
       </Helmet>
 
-      <PageWrapper>
-        <section className={styles.hero}>
-          <div className="container">
-            <p className={styles.eyebrow}>Boutique Officielle</p>
-            <h1 className={styles.title}>Collection</h1>
-            <p className={styles.subtitle}>Produits officiels signés par la légende</p>
-          </div>
-        </section>
-
-        <section className={styles.content}>
-          <div className="container">
-            <nav className={styles.filters} aria-label="Filtrer par catégorie">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  className={`${styles.filter} ${activeCategory === cat ? styles.active : ""}`}
-                  onClick={() => setActiveCategory(cat)}
-                >
-                  {cat}
-                </button>
-              ))}
-            </nav>
-
-            {filtered.length === 0 ? (
-              <p className={styles.empty}>Aucun produit dans cette catégorie.</p>
-            ) : (
-              <div className={styles.grid}>
-                {filtered.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
-            )}
-          </div>
-        </section>
-      </PageWrapper>
+      <div className={styles.construction}>
+        <div className={styles.constructionInner}>
+          <span className={styles.constructionIcon}>
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </span>
+          <p className={styles.constructionEyebrow}>Boutique Officielle</p>
+          <h1 className={styles.constructionTitle}>En Construction</h1>
+          <p className={styles.constructionText}>
+            La boutique officielle Claude Makélélé sera bientôt disponible.<br />
+            Revenez prochainement pour découvrir notre collection.
+          </p>
+          <div className={styles.constructionDivider} />
+          <p className={styles.constructionContact}>
+            Pour toute demande de produit ou partenariat, contactez-nous via la page{" "}
+            <a href="/contact" className={styles.constructionLink}>Contact</a>.
+          </p>
+        </div>
+      </div>
     </>
   );
 }

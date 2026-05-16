@@ -12,6 +12,7 @@ const Boutique = lazy(() => import("../pages/Boutique"));
 const ProductDetail = lazy(() => import("../pages/Boutique/ProductDetail"));
 const ReseauxSociaux = lazy(() => import("../pages/ReseauxSociaux"));
 const Contact = lazy(() => import("../pages/Contact"));
+const MentionsLegales = lazy(() => import("../pages/MentionsLegales"));
 
 function SuspenseWrapper({ children }) {
   return <Suspense fallback={<Loader fullPage />}>{children}</Suspense>;
@@ -25,12 +26,13 @@ const router = createBrowserRouter([
       { index: true, element: <SuspenseWrapper><Accueil /></SuspenseWrapper> },
       { path: "actualites", element: <SuspenseWrapper><Actualites /></SuspenseWrapper> },
       { path: "actualites/:slug", element: <SuspenseWrapper><ArticleDetail /></SuspenseWrapper> },
-      { path: "biographie", element: <SuspenseWrapper><Biographie /></SuspenseWrapper> },
+      { path: "palmares", element: <SuspenseWrapper><Biographie /></SuspenseWrapper> },
       { path: "media", element: <SuspenseWrapper><Media /></SuspenseWrapper> },
       { path: "boutique", element: <SuspenseWrapper><Boutique /></SuspenseWrapper> },
       { path: "boutique/:id", element: <SuspenseWrapper><ProductDetail /></SuspenseWrapper> },
-      { path: "reseaux-sociaux", element: <SuspenseWrapper><ReseauxSociaux /></SuspenseWrapper> },
+      { path: "partenariats", element: <SuspenseWrapper><ReseauxSociaux /></SuspenseWrapper> },
       { path: "contact", element: <SuspenseWrapper><Contact /></SuspenseWrapper> },
+      { path: "mentions-legales", element: <SuspenseWrapper><MentionsLegales /></SuspenseWrapper> },
     ],
   },
 ]);

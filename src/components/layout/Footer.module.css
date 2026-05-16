@@ -126,6 +126,11 @@
     justify-content: center;
   }
 
+  .nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .bottom {
     flex-direction: column;
     text-align: center;
@@ -133,6 +138,8 @@
   }
 
   .legalLinks {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: var(--space-md);
   }
 }

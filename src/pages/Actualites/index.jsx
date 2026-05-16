@@ -8,13 +8,22 @@ export default function Actualites() {
       <Helmet>
         <title>Claude Makélélé — Actualités | Site Officiel</title>
         <meta name="description" content="Toutes les actualités, articles de presse et événements autour de Claude Makélélé." />
+        <meta property="og:title" content="Claude Makélélé — Actualités | Site Officiel" />
+        <meta property="og:description" content="Toutes les actualités, articles de presse et événements autour de Claude Makélélé." />
+        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
+        <meta property="og:url" content="https://claudemakelele.com/actualites" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Claude Makélélé — Actualités | Site Officiel" />
+        <meta name="twitter:description" content="Toutes les actualités, articles de presse et événements autour de Claude Makélélé." />
+        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
+        <link rel="canonical" href="https://claudemakelele.com/actualites" />
       </Helmet>
 
       <div className={styles.grid}>
 
         {/* Cell 1 — Portrait */}
         <div className={styles.cellPortrait}>
-          <img src="/actualites/claude-press.jpeg" alt="Claude Makélélé" loading="eager" />
+          <img src="/imgs/actualites/claude-press.jpeg" alt="Claude Makélélé" loading="eager" />
         </div>
 
         {/* Cell 2 — Text */}
@@ -38,7 +47,7 @@ export default function Actualites() {
 
         {/* Cell 3 — Photo */}
         <div className={styles.cellGold}>
-          <img src="/actualites/make-1.jpeg" alt="Claude Makélélé" loading="lazy" />
+          <img src="/imgs/actualites/make-1.jpeg" alt="Claude Makélélé" loading="lazy" />
           <div className={styles.goldOverlay}>
             <span className={styles.goldQuote}>"Le moteur invisible de toute grande équipe."</span>
           </div>
@@ -48,7 +57,7 @@ export default function Actualites() {
         <div className={styles.cellAction}>
           {["ronaldo", 2, 3, 4, 5].map((n) => (
             <div key={n} className={styles.actionItem}>
-              <img src={`/actualites/make-${n}.jpeg`} alt={`Makélélé ${n}`} loading="lazy" />
+              <img src={`/imgs/actualites/make-${n}.jpeg`} alt={`Makélélé ${n}`} loading="lazy" />
             </div>
           ))}
         </div>
@@ -57,7 +66,7 @@ export default function Actualites() {
         <div className={styles.cellLogos}>
           {[5, 6, 7, 8, 9].map((n) => (
             <div key={n} className={styles.logoItem}>
-              <img src={`/actualites/make-${n}.jpeg`} alt={`Makélélé ${n}`} loading="lazy" />
+              <img src={`/imgs/actualites/make-${n}.jpeg`} alt={`Makélélé ${n}`} loading="lazy" />
             </div>
           ))}
         </div>

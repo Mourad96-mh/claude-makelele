@@ -17,8 +17,7 @@ export default function Footer() {
         {/* Nav links */}
         <nav className={styles.nav}>
           <Link to="/" className={styles.navLink}>Accueil</Link>
-          <Link to="/biographie" className={styles.navLink}>Biographie</Link>
-          <Link to="/media" className={styles.navLink}>Médias</Link>
+          <Link to="/palmares" className={styles.navLink}>Palmarès</Link>
           <Link to="/boutique" className={styles.navLink}>Boutique</Link>
           <Link to="/contact" className={styles.navLink}>Contact</Link>
         </nav>
