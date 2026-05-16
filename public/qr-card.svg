@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="600" height="740" viewBox="0 0 600 740">
+
+  <!-- Background -->
+  <rect width="600" height="740" fill="#1C1917"/>
+
+  <!-- Outer gold border -->
+  <rect x="18" y="18" width="564" height="704"
+        fill="none" stroke="#B8923A" stroke-width="1.2"/>
+
+  <!-- Corner accents -->
+  <polyline points="18,50 18,18 50,18"   fill="none" stroke="#B8923A" stroke-width="2.5"/>
+  <polyline points="550,18 582,18 582,50" fill="none" stroke="#B8923A" stroke-width="2.5"/>
+  <polyline points="18,690 18,722 50,722" fill="none" stroke="#B8923A" stroke-width="2.5"/>
+  <polyline points="550,722 582,722 582,690" fill="none" stroke="#B8923A" stroke-width="2.5"/>
+
+  <!-- Name -->
+  <text x="300" y="92"
+        text-anchor="middle"
+        font-family="Impact, Arial Narrow, sans-serif"
+        font-size="42" fill="#B8923A" letter-spacing="6">CLAUDE MAKÉLÉLÉ</text>
+
+  <!-- Gold divider -->
+  <line x1="80" y1="112" x2="520" y2="112"
+        stroke="#B8923A" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- Tagline -->
+  <text x="300" y="140"
+        text-anchor="middle"
+        font-family="Georgia, serif" font-size="14"
+        font-style="italic" fill="#6B6560" letter-spacing="2">Site Officiel</text>
+
+  <!-- White QR background (with subtle shadow simulation via layered rects) -->
+  <rect x="106" y="166" width="388" height="388"
+        fill="#2a2520" rx="8"/>
+  <rect x="110" y="170" width="380" height="380"
+        fill="#ffffff" rx="6"/>
+
+  <!-- QR Code -->
+  <image href="data:image/png;base64,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"
+         x="120" y="180" width="360" height="360"/>
+
+  <!-- Gold divider -->
+  <line x1="80" y1="570" x2="520" y2="570"
+        stroke="#B8923A" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- Scan label -->
+  <text x="300" y="602"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="10"
+        fill="#B8923A" letter-spacing="5">SCANNEZ POUR VISITER</text>
+
+  <!-- URL -->
+  <text x="300" y="630"
+        text-anchor="middle"
+        font-family="Georgia, serif" font-size="14"
+        font-style="italic" fill="#6B6560">claudemakélélé.com</text>
+
+  <!-- Bottom dot trio -->
+  <circle cx="278" cy="704" r="2.5" fill="#B8923A" opacity="0.45"/>
+  <circle cx="300"    cy="704" r="3.5" fill="#B8923A"/>
+  <circle cx="322" cy="704" r="2.5" fill="#B8923A" opacity="0.45"/>
+
+</svg>
