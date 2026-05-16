@@ -27,15 +27,15 @@ export default function ArticleDetail() {
         <meta name="description" content={article.excerpt} />
         <meta property="og:title" content={`${article.title} | Claude Makélélé`} />
         <meta property="og:description" content={article.excerpt} />
-        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
+        <meta property="og:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://claudemakelele.com/actualites/${article.slug}`} />
+        <meta property="og:url" content={`https://xn--claudemakll-jbbbb.com/actualites/${article.slug}`} />
         <meta property="article:published_time" content={article.date} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${article.title} | Claude Makélélé`} />
         <meta name="twitter:description" content={article.excerpt} />
-        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <link rel="canonical" href={`https://claudemakelele.com/actualites/${article.slug}`} />
+        <meta name="twitter:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <link rel="canonical" href={`https://xn--claudemakll-jbbbb.com/actualites/${article.slug}`} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -44,8 +44,8 @@ export default function ArticleDetail() {
             "description": article.excerpt,
             "datePublished": article.date,
             "author": {"@type": "Person", "name": "Claude Makélélé"},
-            "publisher": {"@type": "Organization", "name": "Claude Makélélé — Site Officiel", "url": "https://claudemakelele.com"},
-            "url": `https://claudemakelele.com/actualites/${article.slug}`
+            "publisher": {"@type": "Organization", "name": "Claude Makélélé — Site Officiel", "url": "https://xn--claudemakll-jbbbb.com"},
+            "url": `https://xn--claudemakll-jbbbb.com/actualites/${article.slug}`
           })}
         </script>
       </Helmet>

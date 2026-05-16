@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://claudemakelele.com/sitemap.xml
+Sitemap: https://xn--claudemakll-jbbbb.com/sitemap.xml

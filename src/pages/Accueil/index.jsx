@@ -16,13 +16,13 @@ export default function Accueil() {
         <meta name="description" content="Site officiel de Claude Makélélé — légende du football mondial, icône du Real Madrid, Chelsea et de l'équipe de France." />
         <meta property="og:title" content="Claude Makélélé | Site Officiel" />
         <meta property="og:description" content="Site officiel de Claude Makélélé — légende du football mondial, icône du Real Madrid, Chelsea et de l'équipe de France." />
-        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <meta property="og:url" content="https://claudemakelele.com/" />
+        <meta property="og:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <meta property="og:url" content="https://xn--claudemakll-jbbbb.com/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Claude Makélélé | Site Officiel" />
         <meta name="twitter:description" content="Site officiel de Claude Makélélé — légende du football mondial, icône du Real Madrid, Chelsea et de l'équipe de France." />
-        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <link rel="canonical" href="https://claudemakelele.com/" />
+        <meta name="twitter:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <link rel="canonical" href="https://xn--claudemakll-jbbbb.com/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -32,8 +32,8 @@ export default function Accueil() {
             "birthPlace": {"@type": "Place", "name": "Kinshasa, République Démocratique du Congo"},
             "nationality": "Français",
             "jobTitle": "Footballeur professionnel (retraité)",
-            "url": "https://claudemakelele.com",
-            "image": "https://claudemakelele.com/claude-maakele.jpeg",
+            "url": "https://xn--claudemakll-jbbbb.com",
+            "image": "https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg",
             "description": "Claude Makélélé est un footballeur français, légende du Real Madrid, Chelsea, PSG et de l'équipe de France, créateur du « rôle Makélélé ».",
             "sameAs": [
               "https://www.instagram.com/makeleleofficial/",

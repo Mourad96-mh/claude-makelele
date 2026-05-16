@@ -8,7 +8,7 @@ export default function MentionsLegales() {
         <title>Mentions Légales | Claude Makélélé — Site Officiel</title>
         <meta name="description" content="Mentions légales du site officiel de Claude Makélélé." />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://claudemakelele.com/mentions-legales" />
+        <link rel="canonical" href="https://xn--claudemakll-jbbbb.com/mentions-legales" />
       </Helmet>
 
       <div className={styles.page}>
@@ -17,7 +17,7 @@ export default function MentionsLegales() {
 
           <section className={styles.section}>
             <h2 className={styles.heading}>1. Éditeur du site</h2>
-            <p>Le site <strong>claudemakelele.com</strong> est édité par :</p>
+            <p>Le site <strong>xn--claudemakll-jbbbb.com</strong> est édité par :</p>
             <ul className={styles.list}>
               <li>Nom : Claude Makélélé</li>
               <li>Gestionnaire du site : Abdessamad Chafiki</li>

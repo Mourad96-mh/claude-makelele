@@ -45,13 +45,13 @@ export default function Contact() {
         <meta name="description" content="Contactez l'équipe de Claude Makélélé pour des demandes de booking, presse ou partenariats." />
         <meta property="og:title" content="Contact & Booking | Claude Makélélé — Site Officiel" />
         <meta property="og:description" content="Contactez l'équipe de Claude Makélélé pour des demandes de booking, presse ou partenariats." />
-        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <meta property="og:url" content="https://claudemakelele.com/contact" />
+        <meta property="og:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <meta property="og:url" content="https://xn--claudemakll-jbbbb.com/contact" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact & Booking | Claude Makélélé — Site Officiel" />
         <meta name="twitter:description" content="Contactez l'équipe de Claude Makélélé pour des demandes de booking, presse ou partenariats." />
-        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <link rel="canonical" href="https://claudemakelele.com/contact" />
+        <meta name="twitter:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <link rel="canonical" href="https://xn--claudemakll-jbbbb.com/contact" />
       </Helmet>
 
       <div className={styles.page}>

@@ -3,5 +3,5 @@ export function buildSeoTitle(page) {
 }
 
 export function buildCanonical(path) {
-  return `https://claudemakelele.com${path}`;
+  return `https://xn--claudemakll-jbbbb.com${path}`;
 }

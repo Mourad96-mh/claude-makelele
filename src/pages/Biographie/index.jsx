@@ -25,13 +25,13 @@ export default function Biographie() {
         <meta name="description" content="Découvrez la biographie de Claude Makélélé, son parcours de Brest au Real Madrid, ses trophées et son style tactique légendaire." />
         <meta property="og:title" content="Claude Makélélé — Biographie | Site Officiel" />
         <meta property="og:description" content="Découvrez la biographie de Claude Makélélé, son parcours de Brest au Real Madrid, ses trophées et son style tactique légendaire." />
-        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <meta property="og:url" content="https://claudemakelele.com/palmares" />
+        <meta property="og:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <meta property="og:url" content="https://xn--claudemakll-jbbbb.com/palmares" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Claude Makélélé — Biographie | Site Officiel" />
         <meta name="twitter:description" content="Découvrez la biographie de Claude Makélélé, son parcours de Brest au Real Madrid, ses trophées et son style tactique légendaire." />
-        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <link rel="canonical" href="https://claudemakelele.com/palmares" />
+        <meta name="twitter:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <link rel="canonical" href="https://xn--claudemakll-jbbbb.com/palmares" />
       </Helmet>
 
       <div className={styles.grid}>

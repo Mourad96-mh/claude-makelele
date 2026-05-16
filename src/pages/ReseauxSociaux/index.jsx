@@ -23,13 +23,13 @@ export default function ReseauxSociaux() {
         <meta name="description" content="Suivez Claude Makélélé sur Instagram, X, Facebook. Ambassadeur de prestige, consultant DAZN, partenaire du PSG." />
         <meta property="og:title" content="Partenariats & Réseaux Sociaux | Claude Makélélé — Site Officiel" />
         <meta property="og:description" content="Suivez Claude Makélélé sur Instagram, X, Facebook. Ambassadeur de prestige, consultant DAZN, partenaire du PSG." />
-        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <meta property="og:url" content="https://claudemakelele.com/partenariats" />
+        <meta property="og:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <meta property="og:url" content="https://xn--claudemakll-jbbbb.com/partenariats" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Partenariats & Réseaux Sociaux | Claude Makélélé — Site Officiel" />
         <meta name="twitter:description" content="Suivez Claude Makélélé sur Instagram, X, Facebook. Ambassadeur de prestige, consultant DAZN, partenaire du PSG." />
-        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <link rel="canonical" href="https://claudemakelele.com/partenariats" />
+        <meta name="twitter:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <link rel="canonical" href="https://xn--claudemakll-jbbbb.com/partenariats" />
       </Helmet>
 
       <div className={styles.grid}>

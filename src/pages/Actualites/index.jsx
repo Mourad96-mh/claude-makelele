@@ -10,13 +10,13 @@ export default function Actualites() {
         <meta name="description" content="Toutes les actualités, articles de presse et événements autour de Claude Makélélé." />
         <meta property="og:title" content="Claude Makélélé — Actualités | Site Officiel" />
         <meta property="og:description" content="Toutes les actualités, articles de presse et événements autour de Claude Makélélé." />
-        <meta property="og:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <meta property="og:url" content="https://claudemakelele.com/actualites" />
+        <meta property="og:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <meta property="og:url" content="https://xn--claudemakll-jbbbb.com/actualites" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Claude Makélélé — Actualités | Site Officiel" />
         <meta name="twitter:description" content="Toutes les actualités, articles de presse et événements autour de Claude Makélélé." />
-        <meta name="twitter:image" content="https://claudemakelele.com/claude-maakele.jpeg" />
-        <link rel="canonical" href="https://claudemakelele.com/actualites" />
+        <meta name="twitter:image" content="https://xn--claudemakll-jbbbb.com/claude-maakele.jpeg" />
+        <link rel="canonical" href="https://xn--claudemakll-jbbbb.com/actualites" />
       </Helmet>
 
       <div className={styles.grid}>

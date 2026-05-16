@@ -8,7 +8,7 @@ export default function Boutique() {
         <title>Boutique — En Construction | Claude Makélélé</title>
         <meta name="description" content="La boutique officielle Claude Makélélé arrive bientôt." />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://claudemakelele.com/boutique" />
+        <link rel="canonical" href="https://xn--claudemakll-jbbbb.com/boutique" />
       </Helmet>
 
       <div className={styles.construction}>
